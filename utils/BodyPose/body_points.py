@@ -13,4 +13,4 @@ def body_points(pose_landmarks,color_colormap_dim):
     LEft_Shoulder=return_point(pose_landmarks[11],color_colormap_dim)
     Right_Waist=return_point(pose_landmarks[24],color_colormap_dim)
     Left_Waist=return_point(pose_landmarks[23],color_colormap_dim)
-    return Right_Shoulder,LEft_Shoulder,Right_Waist,Left_Waist
+    return [Right_Shoulder,LEft_Shoulder,Right_Waist,Left_Waist]
