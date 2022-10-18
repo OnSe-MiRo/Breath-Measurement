@@ -5,7 +5,6 @@ def result_bodypose(pose,mp_pose,mp_drawing,mp_drawing_styles,color_image,depth_
     depth_colormap = cv2.applyColorMap(cv2.convertScaleAbs(depth_image, alpha=0.03), cv2.COLORMAP_JET)
     depth_colormap_dim = depth_colormap.shape
     color_colormap_dim = color_image.shape
-    cv2.imshow('aa',color_image)
     pose_results=pose.process(color_image)
     
     if depth_colormap_dim != color_colormap_dim:
