@@ -8,4 +8,3 @@ def bodypose():
     min_detection_confidence=0.5,
     min_tracking_confidence=0.5)
     return pose,mp_pose,mp_drawing,mp_drawing_styles
-
