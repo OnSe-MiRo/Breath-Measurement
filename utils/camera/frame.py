@@ -9,5 +9,5 @@ def frame(pipeline):
     depth_frame = spatial.process(depth_frame)
     depth_image = np.asanyarray(depth_frame.get_data())
     color_image = np.asanyarray(color_frame.get_data())
-    return color_image,depth_image
     
+    return color_image,depth_image
