@@ -1,6 +1,6 @@
 import pyrealsense2 as rs
 import numpy as np
-import cv2
+
 def frame(pipeline):
     frames = pipeline.wait_for_frames()
     depth_frame = frames.get_depth_frame()
