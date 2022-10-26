@@ -1,4 +1,5 @@
 import pyrealsense2 as rs
+
 def open_camera():
     pipeline = rs.pipeline()
     config = rs.config()
@@ -20,4 +21,5 @@ def open_camera():
     else:
         config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 30)
     pipeline.start(config)
+    
     return pipeline
